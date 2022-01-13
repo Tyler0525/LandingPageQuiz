@@ -1,44 +1,61 @@
 :root {
-    
+
     --cf-dark: #212121;
     --cf-light: #ebebeb;
     --cf-darkblue: #00223d;
     --cf-highlight: #fae100;
-    --title-font-size: 1.0rem 
-    --font-weight: 400;
+    --title-font-size:2.5rem --font-weight: 200;
+    
 }
 
 
 html,
-.body {
-    font-family: 'Roboto', sans-serif;
-   
+body {
+    font-family: 'Roboto',
+        sans-serif;
     height: 100%;
+    color: var(--cf-light);
+
 }
 
 body {
-    font-family: 'Racing Sans One', cursive;
-    font-size: 2.5rem;
     display: flex;
     flex-direction: column;
+}
+
+.bodyBG {
     background-image: url("/img/1920.png");
     background-position: top right;
     background-repeat: no-repeat;
 }
 
-.subtitle {
-   font-family: 'Fira Sans',
-   sans-serif;
+.mainTitle {
+    font-family: 'Racing Sans One',
+        cursive;
+    font-size: 6.0rem;
+    line-height: 4.25rem ;
 }
 
-content {
-    
+.subTitle {
+    font-family: 'Fira Sans',
+        sans-serif;
+    font-size: 2.0rem;
+    line-height: 2.75rem;
+}
+
+.content {
+
     flex: 1 0 auto;
 }
 
-footer {
+.footer {
     flex-shrink: 0;
+    background-color: transparent;
 }
+
+
+
+
 
 /* Breakpoints
 2560x500 
@@ -49,36 +66,26 @@ footer {
 */
 
 /*------- MEDIA QUERIES-------*/
-
-/* small devices (landscape phones 576px and up) */
-@media (min-width: 575.98px) {
-    .mainHeader {
-        background-image: url(/img/768.png);
-        height: 274px;
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+    .bgPicture {
+        background: url("/img/576.png"), var(--cf-darkblue);
     }
+}
 
-    @media (min-width:767.98px) {
-        .mainHeader {
-            background-image: url(/img/768.png);
-            height: 374px;
-        }
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {}
 
-        @media (min-width: 991.98px) {
-            .mainHeader {
-                background-image: url(/img/1200.png);
-                height: 474px;
-            }
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {}
 
-            @media (min-width:1199.98px) {
-                .mainHeader {
-                    background-image: url(/img/1200.png);
-                    height: 574px;
-                }
-            }
+/*X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {}
 
-            @media (min-width:1399.98px) {
-                .mainHeader {
-                    background-image: url(/img/1920.png);
-                    height: 574px;
-                }
-            }
+/*XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {}
+
+button {
+    background-color: var(--cf-highlight);
+    border-radius: 82px;
+}

@@ -67,25 +67,41 @@ body {
 
 /*------- MEDIA QUERIES-------*/
 /*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {
+@media (min-width: 575.98px) {
     .bgPicture {
         background: url("/img/576.png"), var(--cf-darkblue);
     }
 }
 
 /*Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {}
+@media (min-width: 767.98px) {
+    .bgPicture{
+        background: url("/img/768.png"), var(--cf-darkblue)
+    }
+}
 
 /*Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) {}
+@media (min-width: 991.98px) {
+    .bgPicture{
+        background: url("/img/992.png"), var(--cf-darkblue)
+    }
+}
 
 /*X-Large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {}
+@media (min-width: 1199.98px) {
+    .bgPicture{
+        background:url("/img/1200.png"), var(--cf-darkblue)
+    }
+}
 
 /*XX-Large devices (larger desktops, 1400px and up)*/
-@media (min-width: 1400px) {}
+@media (min-width: 1399.98px) {}
+    .bgPicture{
+        background:url("/img/1920.png"), var(--cf-darkblue)
+    }
 
 button {
     background-color: var(--cf-highlight);
     border-radius: 82px;
+   
 }

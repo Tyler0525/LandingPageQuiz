@@ -4,8 +4,8 @@
     --cf-light: #ebebeb;
     --cf-darkblue: #00223d;
     --cf-highlight: #fae100;
-    --title-font-size:2.5rem --font-weight: 200;
-    
+    --title-font-size: 2.5rem --font-weight: 200;
+
 }
 
 
@@ -33,7 +33,7 @@ body {
     font-family: 'Racing Sans One',
         cursive;
     font-size: 6.0rem;
-    line-height: 4.25rem ;
+    line-height: 4.25rem;
 }
 
 .subTitle {
@@ -75,33 +75,34 @@ body {
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 767.98px) {
-    .bgPicture{
+    .bgPicture {
         background: url("/img/768.png"), var(--cf-darkblue)
     }
 }
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 991.98px) {
-    .bgPicture{
+    .bgPicture {
         background: url("/img/992.png"), var(--cf-darkblue)
     }
 }
 
 /*X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1199.98px) {
-    .bgPicture{
-        background:url("/img/1200.png"), var(--cf-darkblue)
+    .bgPicture {
+        background: url("/img/1200.png"), var(--cf-darkblue)
     }
 }
 
 /*XX-Large devices (larger desktops, 1400px and up)*/
 @media (min-width: 1399.98px) {}
-    .bgPicture{
-        background:url("/img/1920.png"), var(--cf-darkblue)
-    }
+
+.bgPicture {
+    background: url("/img/1920.png"), var(--cf-darkblue)
+}
 
 button {
     background-color: var(--cf-highlight);
     border-radius: 82px;
-   
+
 }
